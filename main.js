@@ -19,57 +19,61 @@ techniques may conflict with each other.
 
 // 1. Make sure that the HTML document is fully loaded before running any jQuery code that is needed below. Make sure you don't comment out this code as you'll wrap this code around all the following methods (so don't forget the closing tags, too. 
 
-    
+    // document.onload(console.log("I'm g2g homie"))
    
     
 // 2. Hide all of the paragraphs on the index.html page.
 
-
-    
+// // didn't even need getElementById here ;)
+// // document.getElementById("p")
+//    $('p').hide()
     
     
 // 3. Hide all of the h2's on the page.
 
-
+    // $('h2').hide()
     
 
 
 // 4. Hide all images on the page.
   
-	
+	// $('img').hide()
 	
 	
 	
 // 5. Hide all links on the page.
 
-    
+    // $('a').hide()
 	
 	
 	
 // 6. Hide all of the elements in the document.
 
-    
+    // $('body').hide()
     
  
  
 // 7. Hide all paragraphs when one of them is clicked.
 
-
+// $("p").click(function(){
+//     $("p").hide();
+// });
 
 
     
 // 8. Hide all images when one of them is clicked.
 
-
-
+// $("img").mouseup(function(){
+//     $("img").hide();
+// });
 
 
 // 9. When the user clicks onto the image, toggle the paragraphs between hide and show.  
 
- 
- 
- 
- 
+// $('img').click(function(){
+//     $('p').toggle()
+// })
+
 /*
 SANDBOX: 
 Based on the code that is used to hide all images when clicked, consider testing the following options to test the interaction. 
